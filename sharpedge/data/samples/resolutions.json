@@ -1,0 +1,11 @@
+{
+  "resolutions": [
+    {
+      "market_id": "mkt_mma_ml_001",
+      "outcome": "Fighter Red",
+      "resolved_outcome": "pending",
+      "payout": 0.0,
+      "timestamp": "2026-06-01T05:30:00Z"
+    }
+  ]
+}

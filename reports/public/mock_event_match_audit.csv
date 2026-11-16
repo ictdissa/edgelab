@@ -1,0 +1,6 @@
+market_id,title,external_event_id,decision,score,candidate_count,best_alternative_score,matched_outcomes,rejection_reason,reasons
+pm-ars-che-ars,Will Arsenal win against Chelsea on 2026-06-01?,evt-ars-che,MATCH,1.0000,3,0.0000,{'Arsenal': 'Yes'},,event_id_match=True; score=1.000
+pm-ars-che-draw,Will Arsenal vs Chelsea end in a draw?,evt-ars-che,MATCH,1.0000,3,0.0000,{'Draw': 'Yes'},,event_id_match=True; score=1.000
+pm-btc-100k,"Will BTC be above $100,000 on June 30, 2026?",evt-btc-june,MATCH,1.0000,3,0.0000,{'Yes': 'Yes'},,event_id_match=True; score=1.000
+pm-nyc-rain,"Will NYC rainfall exceed 1 inch on July 4, 2026?",evt-nyc-rain,MATCH,1.0000,3,0.0000,{'Yes': 'Yes'},,event_id_match=True; score=1.000
+pm-spain-world-cup,Will Spain win the 2026 FIFA World Cup?,evt-ars-che,REJECT,0.0000,3,0.0000,{},fixture_or_contract_type_mismatch,event_id_match=False; score=0.000; partial outright field cannot anchor a yes/no outright; no outcome mapping

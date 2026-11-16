@@ -1,0 +1,26 @@
+{
+  "protocol_id": "soccer_1x2_stale_quotes_v1",
+  "hypothesis": "Complete independently timestamped bookmaker no-vig anchors identify stale pre-match regulation-time soccer 1X2 quotes with positive event-weighted 5m net executable markouts after conservative costs.",
+  "category": "sports_1x2",
+  "leagues": [],
+  "bookmaker_sources": [],
+  "selection_rule": "Before registration specify the fixed leagues and provider source identifiers. Evaluate every covered pre-match regulation-time 1X2 contract passing exact event/outcome/token matching, reviewed settlement equivalence, complete coherent odds, frozen cost/uncertainty thresholds and portfolio risk. Preserve all exclusions and missing follow-ups.",
+  "contract_scope": "pre_match_regulation_time_complete_1x2",
+  "primary_horizon_seconds": 300,
+  "primary_estimand": "equal_weight_event_net_quote_markout",
+  "minimum_effect_size": 0.005,
+  "significance_level": 0.05,
+  "target_power": 0.8,
+  "evaluation_start": null,
+  "evaluation_end": null,
+  "exclusions": [
+    "Unreviewed or economically different settlement rules",
+    "Missing teams, ambiguous event identity or incomplete bookmaker vintage",
+    "In-play, outright, qualification, overtime, low liquidity or crossed quotes",
+    "Stale sources, missing receipt timestamps or unavailable cost provenance"
+  ],
+  "benchmark": "Report market-mid and equal-book no-vig calibration separately on all resolved covered events; compare frozen strategy quote markouts to no-trade and a predeclared simple edge-selection baseline.",
+  "stopping_rule": "Specify evaluation dates and independent-event power requirement before registering. Evaluate once at the fixed end date; do not stop on a positive result. Missing follow-ups remain missing and their selection bias is reported.",
+  "cost_policy": "Current configured fees and slippage are placeholders. No empirical profitability conclusion until venue-specific costs and arrival-book fill assumptions are validated and frozen before evaluation.",
+  "uncertainty_policy": "Current uncertainty is a heuristic abstention buffer, not a confidence interval. Calibrate it on training events only and freeze parameters before held-out evaluation."
+}

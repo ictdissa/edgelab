@@ -1,0 +1,39 @@
+{
+  "orderbooks": [
+    {
+      "market_id": "pm-ars-che-ars",
+      "token_id": "ars-yes",
+      "timestamp": "2026-05-18T00:00:00Z",
+      "bids": [{"price": 0.43, "size": 80}],
+      "asks": [{"price": 0.45, "size": 70}]
+    },
+    {
+      "market_id": "pm-ars-che-draw",
+      "token_id": "draw-yes",
+      "timestamp": "2026-05-18T00:00:00Z",
+      "bids": [{"price": 0.28, "size": 35}],
+      "asks": [{"price": 0.31, "size": 40}]
+    },
+    {
+      "market_id": "pm-btc-100k",
+      "token_id": "btc-yes",
+      "timestamp": "2026-05-18T00:00:00Z",
+      "bids": [{"price": 0.38, "size": 50}],
+      "asks": [{"price": 0.40, "size": 45}]
+    },
+    {
+      "market_id": "pm-nyc-rain",
+      "token_id": "rain-yes",
+      "timestamp": "2026-05-18T00:00:00Z",
+      "bids": [{"price": 0.24, "size": 30}],
+      "asks": [{"price": 0.27, "size": 25}]
+    },
+    {
+      "market_id": "pm-spain-world-cup",
+      "token_id": "spain-yes",
+      "timestamp": "2026-05-18T00:00:00Z",
+      "bids": [{"price": 0.12, "size": 90}],
+      "asks": [{"price": 0.14, "size": 90}]
+    }
+  ]
+}

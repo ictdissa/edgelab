@@ -1,0 +1,69 @@
+{
+  "markets": [
+    {
+      "market_id": "pm-ars-che-ars",
+      "event_id": "evt-ars-che",
+      "category": "sports_1x2",
+      "title": "Will Arsenal win against Chelsea on 2026-06-01?",
+      "description": "English Premier League match result within regular time.",
+      "outcomes": ["Yes", "No"],
+      "token_ids": ["ars-yes", "ars-no"],
+      "start_time": "2026-06-01T19:00:00Z",
+      "resolution_source": "official league result",
+      "status": "active",
+      "raw_metadata": {"target_outcome": "Arsenal", "fixture": "Arsenal vs Chelsea"}
+    },
+    {
+      "market_id": "pm-ars-che-draw",
+      "event_id": "evt-ars-che",
+      "category": "sports_1x2",
+      "title": "Will Arsenal vs Chelsea end in a draw?",
+      "description": "English Premier League match result within regular time.",
+      "outcomes": ["Yes", "No"],
+      "token_ids": ["draw-yes", "draw-no"],
+      "start_time": "2026-06-01T19:00:00Z",
+      "resolution_source": "official league result",
+      "status": "active",
+      "raw_metadata": {"target_outcome": "Draw", "fixture": "Arsenal vs Chelsea"}
+    },
+    {
+      "market_id": "pm-btc-100k",
+      "event_id": "evt-btc-june",
+      "category": "crypto_threshold",
+      "title": "Will BTC be above $100,000 on June 30, 2026?",
+      "description": "BTC/USD threshold market.",
+      "outcomes": ["Yes", "No"],
+      "token_ids": ["btc-yes", "btc-no"],
+      "end_time": "2026-06-30T23:59:00Z",
+      "resolution_source": "BTC/USD index",
+      "status": "active",
+      "raw_metadata": {"asset": "BTC", "threshold": 100000, "direction": "above"}
+    },
+    {
+      "market_id": "pm-nyc-rain",
+      "event_id": "evt-nyc-rain",
+      "category": "weather_threshold",
+      "title": "Will NYC rainfall exceed 1 inch on July 4, 2026?",
+      "description": "Daily Central Park rainfall threshold.",
+      "outcomes": ["Yes", "No"],
+      "token_ids": ["rain-yes", "rain-no"],
+      "end_time": "2026-07-04T23:59:00Z",
+      "resolution_source": "NOAA station data",
+      "status": "active",
+      "raw_metadata": {"location": "New York City", "threshold": 1.0, "unit": "inch"}
+    },
+    {
+      "market_id": "pm-spain-world-cup",
+      "event_id": "evt-world-cup",
+      "category": "sports_outright",
+      "title": "Will Spain win the 2026 FIFA World Cup?",
+      "description": "Outright tournament market.",
+      "outcomes": ["Yes", "No"],
+      "token_ids": ["spain-yes", "spain-no"],
+      "end_time": "2026-07-19T22:00:00Z",
+      "resolution_source": "FIFA result",
+      "status": "active",
+      "raw_metadata": {"partial_field": true}
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+[
+  {
+    "market_id": "REPLACE_WITH_REVIEWED_POLYMARKET_MARKET_ID",
+    "external_event_id": "REPLACE_WITH_REVIEWED_ODDS_EVENT_ID",
+    "book": "REPLACE_WITH_EXACT_SOURCE_NAME",
+    "prediction": {
+      "review_status": "unreviewed",
+      "period": "regulation_time",
+      "includes_overtime": false,
+      "draw_is_outcome": true,
+      "cancellation_rule": "REPLACE_WITH_VERIFIED_SHARED_CANCELLATION_RULE",
+      "evidence_reference": "REPLACE_WITH_DATED_RULE_REVIEW_REFERENCE",
+      "reviewed_at": "1970-01-01T00:00:00Z"
+    },
+    "external": {
+      "review_status": "unreviewed",
+      "period": "regulation_time",
+      "includes_overtime": false,
+      "draw_is_outcome": true,
+      "cancellation_rule": "REPLACE_WITH_VERIFIED_SHARED_CANCELLATION_RULE",
+      "evidence_reference": "REPLACE_WITH_DATED_BOOKMAKER_RULE_REFERENCE",
+      "reviewed_at": "1970-01-01T00:00:00Z"
+    }
+  }
+]

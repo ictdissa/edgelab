@@ -1,0 +1,210 @@
+{
+  "schema_version": 1,
+  "publication_date": "2026-11-16",
+  "scope": "fresh macOS arm64 Python virtual environment; pinned dependencies installed offline from cached wheels; allowlisted source export; not hosted CI",
+  "runtime": {
+    "python": "3.11.15",
+    "system": "Darwin",
+    "machine": "arm64",
+    "code_fingerprint": "45f5288f08c4b2f9417ee564d5f1eb49f4bd8153d3061870be9d4f1b0557339c",
+    "private_env_present": false,
+    "import_from_clean_export": true
+  },
+  "checks": {
+    "build_tools": {
+      "command": [
+        "-m",
+        "pip",
+        "install",
+        "--no-index",
+        "--find-links",
+        "<validation-root>/wheels",
+        "setuptools>=68",
+        "wheel"
+      ],
+      "exit_code": 0
+    },
+    "pinned_dependencies": {
+      "command": [
+        "-m",
+        "pip",
+        "install",
+        "--no-index",
+        "--find-links",
+        "<validation-root>/wheels",
+        "-r",
+        "requirements.lock"
+      ],
+      "exit_code": 0
+    },
+    "editable_install": {
+      "command": [
+        "-m",
+        "pip",
+        "install",
+        "--no-index",
+        "--no-build-isolation",
+        "--no-deps",
+        "-e",
+        "."
+      ],
+      "exit_code": 0
+    },
+    "dependency_consistency": {
+      "command": [
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exit_code": 0
+    },
+    "import_origin": {
+      "command": [
+        "-c",
+        "import edgelab, json, platform; from pathlib import Path; from edgelab.research.experiment import canonical_hash, source_hashes; print(json.dumps(dict(python=platform.python_version(), system=platform.system(), machine=platform.machine(), code_fingerprint=canonical_hash(source_hashes()), private_env_present=Path('.env').exists(), import_from_clean_export=Path(edgelab.__file__).resolve().is_relative_to(Path.cwd()))))"
+      ],
+      "exit_code": 0
+    },
+    "tests": {
+      "command": [
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "exit_code": 0,
+      "passed": 475
+    },
+    "ruff": {
+      "command": [
+        "-m",
+        "ruff",
+        "check",
+        "edgelab",
+        "scripts",
+        "tests"
+      ],
+      "exit_code": 0
+    },
+    "mypy": {
+      "command": [
+        "-m",
+        "mypy",
+        "--explicit-package-bases",
+        "edgelab",
+        "scripts/run_prospective_study.py",
+        "scripts/export_public_release.py"
+      ],
+      "exit_code": 0,
+      "checked_source_files": 68
+    },
+    "mock_research": {
+      "command": [
+        "scripts/run_research_analysis.py",
+        "--mock",
+        "--output",
+        "reports/mock_research_analysis.md"
+      ],
+      "exit_code": 0
+    },
+    "mock_edge_scan": {
+      "command": [
+        "scripts/run_edge_scan.py",
+        "--mock"
+      ],
+      "exit_code": 0
+    },
+    "mock_paper_trader": {
+      "command": [
+        "scripts/run_paper_trader.py",
+        "--mock"
+      ],
+      "exit_code": 0
+    },
+    "mock_clv": {
+      "command": [
+        "scripts/update_clv.py",
+        "--mock",
+        "--output",
+        "reports/mock_clv_report.md"
+      ],
+      "exit_code": 0
+    },
+    "mock_backtest": {
+      "command": [
+        "scripts/run_backtest.py",
+        "--mock"
+      ],
+      "exit_code": 0
+    },
+    "sealed_mock": {
+      "command": [
+        "scripts/reproduce_research.py",
+        "--mock",
+        "--output-dir",
+        "reports/release_sealed"
+      ],
+      "exit_code": 0
+    },
+    "sealed_verify": {
+      "command": [
+        "scripts/reproduce_research.py",
+        "--verify",
+        "--output-dir",
+        "reports/release_sealed"
+      ],
+      "exit_code": 0
+    },
+    "sealed_replay": {
+      "command": [
+        "scripts/reproduce_research.py",
+        "--replay-from",
+        "reports/release_sealed",
+        "--output-dir",
+        "reports/release_replayed"
+      ],
+      "exit_code": 0
+    },
+    "synthetic_lifecycle": {
+      "command": [
+        "scripts/run_prospective_study.py",
+        "--mock",
+        "--study-dir",
+        "reports/release_lifecycle"
+      ],
+      "exit_code": 0
+    },
+    "replay_signals.csv": {
+      "byte_identical": true,
+      "exit_code": 0
+    },
+    "replay_decisions.csv": {
+      "byte_identical": true,
+      "exit_code": 0
+    },
+    "replay_event_match_audit.csv": {
+      "byte_identical": true,
+      "exit_code": 0
+    }
+  },
+  "synthetic_workflow": {
+    "markets": 5,
+    "fair_values": 4,
+    "signals": 4,
+    "fills": 0,
+    "clv_observations": 0,
+    "performance_evidence": false
+  },
+  "market_data_requests": 0,
+  "dependency_network_requests": 0,
+  "live_order_requests": 0,
+  "github_uploaded": false,
+  "hosted_ci": "not_run",
+  "credential_rotation": "requires provider-account action; not performed",
+  "caveats": [
+    "Regression and fresh-install checks are engineering evidence, not alpha or independent model validation",
+    "Raw provider responses and private records are excluded; live feasibility remains the 2026-10-13 aggregate disclosure",
+    "The pinned dependency snapshot is not a hash-verified cross-platform lock",
+    "Configured-secret and selected-pattern scanning is not general security certification"
+  ],
+  "command_runtime_paths_redacted": true
+}

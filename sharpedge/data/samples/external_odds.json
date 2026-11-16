@@ -1,0 +1,43 @@
+{
+  "odds": [
+    {"event_id": "mock-mma-main-2026", "sport": "MMA", "book": "Pinnacle", "market_type": "moneyline", "outcome": "Fighter Red", "decimal_odds": 1.72, "timestamp": "2026-05-16T00:00:00Z"},
+    {"event_id": "mock-mma-main-2026", "sport": "MMA", "book": "Pinnacle", "market_type": "moneyline", "outcome": "Fighter Blue", "decimal_odds": 2.22, "timestamp": "2026-05-16T00:00:00Z"},
+    {"event_id": "mock-mma-main-2026", "sport": "MMA", "book": "Circa", "market_type": "moneyline", "outcome": "Fighter Red", "decimal_odds": 1.70, "timestamp": "2026-05-16T00:00:00Z"},
+    {"event_id": "mock-mma-main-2026", "sport": "MMA", "book": "Circa", "market_type": "moneyline", "outcome": "Fighter Blue", "decimal_odds": 2.25, "timestamp": "2026-05-16T00:00:00Z"},
+    {"event_id": "mock-mma-main-2026", "sport": "MMA", "book": "Betfair", "market_type": "moneyline", "outcome": "Fighter Red", "decimal_odds": 1.74, "timestamp": "2026-05-16T00:00:00Z"},
+    {"event_id": "mock-mma-main-2026", "sport": "MMA", "book": "Betfair", "market_type": "moneyline", "outcome": "Fighter Blue", "decimal_odds": 2.18, "timestamp": "2026-05-16T00:00:00Z"},
+
+    {"event_id": "mock-mma-main-2026", "sport": "MMA", "book": "Pinnacle", "market_type": "method_of_victory", "outcome": "Fighter Red by KO/TKO", "decimal_odds": 3.10, "timestamp": "2026-05-16T00:00:00Z"},
+    {"event_id": "mock-mma-main-2026", "sport": "MMA", "book": "Pinnacle", "market_type": "method_of_victory", "outcome": "Fighter Red by Submission", "decimal_odds": 21.0, "timestamp": "2026-05-16T00:00:00Z"},
+    {"event_id": "mock-mma-main-2026", "sport": "MMA", "book": "Pinnacle", "market_type": "method_of_victory", "outcome": "Fighter Red by Decision", "decimal_odds": 4.80, "timestamp": "2026-05-16T00:00:00Z"},
+    {"event_id": "mock-mma-main-2026", "sport": "MMA", "book": "Pinnacle", "market_type": "method_of_victory", "outcome": "Fighter Blue by KO/TKO", "decimal_odds": 4.40, "timestamp": "2026-05-16T00:00:00Z"},
+    {"event_id": "mock-mma-main-2026", "sport": "MMA", "book": "Pinnacle", "market_type": "method_of_victory", "outcome": "Fighter Blue by Submission", "decimal_odds": 26.0, "timestamp": "2026-05-16T00:00:00Z"},
+    {"event_id": "mock-mma-main-2026", "sport": "MMA", "book": "Pinnacle", "market_type": "method_of_victory", "outcome": "Fighter Blue by Decision", "decimal_odds": 5.50, "timestamp": "2026-05-16T00:00:00Z"},
+
+    {"event_id": "mock-mma-main-2026", "sport": "MMA", "book": "Pinnacle", "market_type": "goes_distance", "outcome": "Yes", "decimal_odds": 2.45, "timestamp": "2026-05-16T00:00:00Z"},
+    {"event_id": "mock-mma-main-2026", "sport": "MMA", "book": "Pinnacle", "market_type": "goes_distance", "outcome": "No", "decimal_odds": 1.62, "timestamp": "2026-05-16T00:00:00Z"},
+    {"event_id": "mock-mma-main-2026", "sport": "MMA", "book": "Circa", "market_type": "goes_distance", "outcome": "Yes", "decimal_odds": 2.50, "timestamp": "2026-05-16T00:00:00Z"},
+    {"event_id": "mock-mma-main-2026", "sport": "MMA", "book": "Circa", "market_type": "goes_distance", "outcome": "No", "decimal_odds": 1.60, "timestamp": "2026-05-16T00:00:00Z"},
+
+    {"event_id": "mock-soccer-match-2026", "sport": "Soccer", "book": "Pinnacle", "market_type": "1x2", "outcome": "North London FC", "decimal_odds": 2.05, "timestamp": "2026-05-16T00:00:00Z"},
+    {"event_id": "mock-soccer-match-2026", "sport": "Soccer", "book": "Pinnacle", "market_type": "1x2", "outcome": "Draw", "decimal_odds": 3.50, "timestamp": "2026-05-16T00:00:00Z"},
+    {"event_id": "mock-soccer-match-2026", "sport": "Soccer", "book": "Pinnacle", "market_type": "1x2", "outcome": "West London FC", "decimal_odds": 3.70, "timestamp": "2026-05-16T00:00:00Z"},
+    {"event_id": "mock-soccer-match-2026", "sport": "Soccer", "book": "Betfair", "market_type": "1x2", "outcome": "North London FC", "decimal_odds": 2.08, "timestamp": "2026-05-16T00:00:00Z"},
+    {"event_id": "mock-soccer-match-2026", "sport": "Soccer", "book": "Betfair", "market_type": "1x2", "outcome": "Draw", "decimal_odds": 3.55, "timestamp": "2026-05-16T00:00:00Z"},
+    {"event_id": "mock-soccer-match-2026", "sport": "Soccer", "book": "Betfair", "market_type": "1x2", "outcome": "West London FC", "decimal_odds": 3.65, "timestamp": "2026-05-16T00:00:00Z"},
+
+    {"event_id": "mock-soccer-match-2026", "sport": "Soccer", "book": "Pinnacle", "market_type": "exact_score", "outcome": "North London FC 1-0", "decimal_odds": 7.5, "timestamp": "2026-05-16T00:00:00Z"},
+    {"event_id": "mock-soccer-match-2026", "sport": "Soccer", "book": "Pinnacle", "market_type": "exact_score", "outcome": "North London FC 2-1", "decimal_odds": 8.0, "timestamp": "2026-05-16T00:00:00Z"},
+    {"event_id": "mock-soccer-match-2026", "sport": "Soccer", "book": "Pinnacle", "market_type": "exact_score", "outcome": "Draw 1-1", "decimal_odds": 7.0, "timestamp": "2026-05-16T00:00:00Z"},
+    {"event_id": "mock-soccer-match-2026", "sport": "Soccer", "book": "Pinnacle", "market_type": "exact_score", "outcome": "West London FC 1-0", "decimal_odds": 12.0, "timestamp": "2026-05-16T00:00:00Z"},
+    {"event_id": "mock-soccer-match-2026", "sport": "Soccer", "book": "Pinnacle", "market_type": "exact_score", "outcome": "Other score", "decimal_odds": 1.95, "timestamp": "2026-05-16T00:00:00Z"},
+
+    {"event_id": "epl-season-2026", "sport": "Soccer", "book": "Pinnacle", "market_type": "league_winner", "outcome": "North London FC", "decimal_odds": 3.25, "timestamp": "2026-05-16T00:00:00Z"},
+    {"event_id": "epl-season-2026", "sport": "Soccer", "book": "Pinnacle", "market_type": "league_winner", "outcome": "City FC", "decimal_odds": 3.00, "timestamp": "2026-05-16T00:00:00Z"},
+    {"event_id": "epl-season-2026", "sport": "Soccer", "book": "Pinnacle", "market_type": "league_winner", "outcome": "Merseyside FC", "decimal_odds": 4.80, "timestamp": "2026-05-16T00:00:00Z"},
+    {"event_id": "epl-season-2026", "sport": "Soccer", "book": "Pinnacle", "market_type": "league_winner", "outcome": "Other club", "decimal_odds": 6.00, "timestamp": "2026-05-16T00:00:00Z"},
+    {"event_id": "epl-season-2026", "sport": "Soccer", "book": "Pinnacle", "market_type": "top_4", "outcome": "North London FC", "decimal_odds": 1.35, "timestamp": "2026-05-16T00:00:00Z"},
+    {"event_id": "epl-season-2026", "sport": "Soccer", "book": "Pinnacle", "market_type": "top_4", "outcome": "City FC", "decimal_odds": 1.30, "timestamp": "2026-05-16T00:00:00Z"},
+    {"event_id": "epl-season-2026", "sport": "Soccer", "book": "Pinnacle", "market_type": "top_4", "outcome": "Merseyside FC", "decimal_odds": 1.50, "timestamp": "2026-05-16T00:00:00Z"}
+  ]
+}

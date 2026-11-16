@@ -1,0 +1,36 @@
+name: Research quality
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  offline-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: requirements.lock
+      - run: python -m pip install -r requirements.lock
+      - run: python -m pip install --no-deps -e .
+      - run: python -m pytest -q
+      - run: ruff check edgelab scripts tests
+      - run: mypy --explicit-package-bases edgelab scripts/run_prospective_study.py scripts/export_public_release.py
+      - run: python scripts/run_research_analysis.py --mock --output reports/mock_research_analysis.md
+      - run: python scripts/run_edge_scan.py --mock
+      - run: python scripts/run_paper_trader.py --mock
+      - run: python scripts/update_clv.py --mock --output reports/mock_clv_report.md
+      - run: python scripts/run_backtest.py --mock
+      - run: python scripts/run_prospective_study.py --mock --study-dir reports/ci_synthetic_lifecycle
+      - run: python scripts/reproduce_research.py --mock --output-dir reports/ci_sealed_mock
+      - run: python scripts/reproduce_research.py --verify --output-dir reports/ci_sealed_mock
+      - run: python scripts/reproduce_research.py --replay-from reports/ci_sealed_mock --output-dir reports/ci_replayed_mock
+      - run: cmp reports/ci_sealed_mock/signals.csv reports/ci_replayed_mock/signals.csv
+      - run: cmp reports/ci_sealed_mock/decisions.csv reports/ci_replayed_mock/decisions.csv
+      - run: cmp reports/ci_sealed_mock/event_match_audit.csv reports/ci_replayed_mock/event_match_audit.csv
+      - run: python scripts/export_public_release.py --output dist/edgelab-github-ready.zip
+      - run: python scripts/export_public_release.py --verify dist/edgelab-github-ready.zip
+      - run: python -m zipfile -e dist/edgelab-github-ready.zip dist/clean-export
+      - run: python -m pytest -q
+        working-directory: dist/clean-export

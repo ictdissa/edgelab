@@ -1,0 +1,31 @@
+{
+  "orderbooks": [
+    {"market_id": "mkt_mma_ml_001", "token_id": "tok_mma_pereira_yes", "timestamp": "2026-05-15T23:00:00Z", "bids": [{"price": 0.50, "size": 70}], "asks": [{"price": 0.53, "size": 60}]},
+    {"market_id": "mkt_mma_ml_001", "token_id": "tok_mma_hill_yes", "timestamp": "2026-05-15T23:00:00Z", "bids": [{"price": 0.45, "size": 65}], "asks": [{"price": 0.48, "size": 55}]},
+    {"market_id": "mkt_soccer_1x2_001", "token_id": "tok_arsenal_win", "timestamp": "2026-05-15T23:00:00Z", "bids": [{"price": 0.41, "size": 100}], "asks": [{"price": 0.44, "size": 90}]},
+    {"market_id": "mkt_soccer_1x2_001", "token_id": "tok_draw", "timestamp": "2026-05-15T23:00:00Z", "bids": [{"price": 0.25, "size": 90}], "asks": [{"price": 0.29, "size": 80}]},
+    {"market_id": "mkt_soccer_1x2_001", "token_id": "tok_chelsea_win", "timestamp": "2026-05-15T23:00:00Z", "bids": [{"price": 0.24, "size": 80}], "asks": [{"price": 0.28, "size": 70}]},
+
+    {"market_id": "mkt_mma_ml_001", "token_id": "tok_mma_pereira_yes", "timestamp": "2026-05-16T00:00:00Z", "bids": [{"price": 0.49, "size": 90}], "asks": [{"price": 0.51, "size": 75}]},
+    {"market_id": "mkt_mma_ml_001", "token_id": "tok_mma_hill_yes", "timestamp": "2026-05-16T00:00:00Z", "bids": [{"price": 0.47, "size": 80}], "asks": [{"price": 0.50, "size": 65}]},
+    {"market_id": "mkt_soccer_1x2_001", "token_id": "tok_arsenal_win", "timestamp": "2026-05-16T00:00:00Z", "bids": [{"price": 0.40, "size": 120}], "asks": [{"price": 0.42, "size": 100}]},
+    {"market_id": "mkt_soccer_1x2_001", "token_id": "tok_draw", "timestamp": "2026-05-16T00:00:00Z", "bids": [{"price": 0.25, "size": 90}], "asks": [{"price": 0.28, "size": 85}]},
+    {"market_id": "mkt_soccer_1x2_001", "token_id": "tok_chelsea_win", "timestamp": "2026-05-16T00:00:00Z", "bids": [{"price": 0.25, "size": 80}], "asks": [{"price": 0.28, "size": 70}]}
+  ],
+  "external_odds": [
+    {"event_id": "mock-mma-main-2026", "sport": "MMA", "book": "Pinnacle", "market_type": "moneyline", "outcome": "Fighter Red", "decimal_odds": 1.80, "timestamp": "2026-05-15T23:00:00Z"},
+    {"event_id": "mock-mma-main-2026", "sport": "MMA", "book": "Pinnacle", "market_type": "moneyline", "outcome": "Fighter Blue", "decimal_odds": 2.10, "timestamp": "2026-05-15T23:00:00Z"},
+    {"event_id": "mock-soccer-match-2026", "sport": "Soccer", "book": "Pinnacle", "market_type": "1x2", "outcome": "North London FC", "decimal_odds": 2.15, "timestamp": "2026-05-15T23:00:00Z"},
+    {"event_id": "mock-soccer-match-2026", "sport": "Soccer", "book": "Pinnacle", "market_type": "1x2", "outcome": "Draw", "decimal_odds": 3.50, "timestamp": "2026-05-15T23:00:00Z"},
+    {"event_id": "mock-soccer-match-2026", "sport": "Soccer", "book": "Pinnacle", "market_type": "1x2", "outcome": "West London FC", "decimal_odds": 3.60, "timestamp": "2026-05-15T23:00:00Z"},
+
+    {"event_id": "mock-mma-main-2026", "sport": "MMA", "book": "Pinnacle", "market_type": "moneyline", "outcome": "Fighter Red", "decimal_odds": 1.72, "timestamp": "2026-05-16T00:00:00Z"},
+    {"event_id": "mock-mma-main-2026", "sport": "MMA", "book": "Pinnacle", "market_type": "moneyline", "outcome": "Fighter Blue", "decimal_odds": 2.22, "timestamp": "2026-05-16T00:00:00Z"},
+    {"event_id": "mock-soccer-match-2026", "sport": "Soccer", "book": "Pinnacle", "market_type": "1x2", "outcome": "North London FC", "decimal_odds": 2.05, "timestamp": "2026-05-16T00:00:00Z"},
+    {"event_id": "mock-soccer-match-2026", "sport": "Soccer", "book": "Pinnacle", "market_type": "1x2", "outcome": "Draw", "decimal_odds": 3.50, "timestamp": "2026-05-16T00:00:00Z"},
+    {"event_id": "mock-soccer-match-2026", "sport": "Soccer", "book": "Pinnacle", "market_type": "1x2", "outcome": "West London FC", "decimal_odds": 3.70, "timestamp": "2026-05-16T00:00:00Z"},
+
+    {"event_id": "mock-mma-main-2026", "sport": "MMA", "book": "Pinnacle", "market_type": "moneyline", "outcome": "Fighter Red", "decimal_odds": 1.45, "timestamp": "2026-05-16T01:00:00Z"},
+    {"event_id": "mock-mma-main-2026", "sport": "MMA", "book": "Pinnacle", "market_type": "moneyline", "outcome": "Fighter Blue", "decimal_odds": 2.85, "timestamp": "2026-05-16T01:00:00Z"}
+  ]
+}

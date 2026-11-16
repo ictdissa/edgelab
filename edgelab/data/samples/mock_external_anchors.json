@@ -1,0 +1,80 @@
+{
+  "sports_odds": [
+    {
+      "source_id": "odds-ars-che-pinnacle-ars",
+      "event_id": "evt-ars-che",
+      "source": "Pinnacle",
+      "category": "sports_1x2",
+      "outcome": "Arsenal",
+      "decimal_odds": 2.05,
+      "timestamp": "2026-05-18T00:00:00Z"
+    },
+    {
+      "source_id": "odds-ars-che-pinnacle-draw",
+      "event_id": "evt-ars-che",
+      "source": "Pinnacle",
+      "category": "sports_1x2",
+      "outcome": "Draw",
+      "decimal_odds": 3.60,
+      "timestamp": "2026-05-18T00:00:00Z"
+    },
+    {
+      "source_id": "odds-ars-che-pinnacle-che",
+      "event_id": "evt-ars-che",
+      "source": "Pinnacle",
+      "category": "sports_1x2",
+      "outcome": "Chelsea",
+      "decimal_odds": 3.80,
+      "timestamp": "2026-05-18T00:00:00Z"
+    },
+    {
+      "source_id": "odds-ars-che-betfair-ars",
+      "event_id": "evt-ars-che",
+      "source": "Betfair Exchange",
+      "category": "sports_1x2",
+      "outcome": "Arsenal",
+      "decimal_odds": 2.10,
+      "timestamp": "2026-05-18T00:00:00Z"
+    },
+    {
+      "source_id": "odds-ars-che-betfair-draw",
+      "event_id": "evt-ars-che",
+      "source": "Betfair Exchange",
+      "category": "sports_1x2",
+      "outcome": "Draw",
+      "decimal_odds": 3.55,
+      "timestamp": "2026-05-18T00:00:00Z"
+    },
+    {
+      "source_id": "odds-ars-che-betfair-che",
+      "event_id": "evt-ars-che",
+      "source": "Betfair Exchange",
+      "category": "sports_1x2",
+      "outcome": "Chelsea",
+      "decimal_odds": 3.70,
+      "timestamp": "2026-05-18T00:00:00Z"
+    }
+  ],
+  "crypto": [
+    {
+      "source_id": "crypto-btc-spot",
+      "event_id": "evt-btc-june",
+      "source": "mock_spot_vol",
+      "category": "crypto_threshold",
+      "outcome": "Yes",
+      "timestamp": "2026-05-18T00:00:00Z",
+      "metadata": {"spot": 95000, "threshold": 100000, "volatility": 0.55, "expiry": "2026-06-30T23:59:00Z"}
+    }
+  ],
+  "weather": [
+    {
+      "source_id": "weather-nyc-rain",
+      "event_id": "evt-nyc-rain",
+      "source": "mock_forecast_distribution",
+      "category": "weather_threshold",
+      "outcome": "Yes",
+      "timestamp": "2026-05-18T00:00:00Z",
+      "metadata": {"forecast_mean": 0.72, "forecast_std": 0.35, "threshold": 1.0}
+    }
+  ]
+}
